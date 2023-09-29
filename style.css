@@ -1,0 +1,283 @@
+.section {
+  width: 30%;
+  float: right;
+  color: black;
+  list-style: none;
+  justify-content: space-around;
+}
+
+body {
+  background: linear-gradient(to right, #207cfc, transparent 60%);
+  margin: 0;
+  padding: 0;
+}
+
+.test {
+  margin-left: -40px;
+  text-decoration: none;
+}
+
+.section>ul {
+  list-style-type: none;
+}
+
+.h1 {
+  text-align: center;
+  color: antiquewhite;
+
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20 rem;
+  align-items: center;
+  margin-left: 3%;
+  margin-right: 2%;
+
+}
+
+.header__content h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: left 3px;
+  ;
+  margin: right 2px;
+  ;
+}
+
+.header__content h1 {
+  margin-bottom: 2rem;
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin: left 3px;
+  margin: right 2px;
+}
+
+.header__image {
+  position: relative;
+  padding-right: 0rem;
+
+}
+
+.resume {
+  text-align: center;
+  font-size: large;
+}
+
+.resume__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rem;
+  align-items: center;
+  margin-left: 3%;
+  margin-right: 2%;
+
+}
+
+.input[type=button],
+input[type=submit],
+input[type=reset] {
+  background-color: #207cfc;
+  border: none;
+  color: white;
+  padding: 7px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.contact_us {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 26px;
+  margin-right: 26px;
+}
+
+.dropdwn,
+form>input {
+  width: 60%;
+  height: 40px;
+  border: 2px solid #297ff8;
+  border-radius: 5px;
+}
+
+
+.dropdwn:hover,
+form>input:hover {
+  border: 2px solid #0b264d;
+  border-radius: 5px;
+}
+
+.dropdwn:focus,
+form>input:focus {
+  border: 2px solid #063e8b;
+  border-radius: 5px;
+}
+
+
+.about_us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto -40px;
+  width: 50%;
+  text-align: center;
+}
+
+.about_us>h2,
+.about_us>p {
+  text-align: center;
+}
+
+.form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.header__content>p {
+  margin: 0 20px 10px 20px;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 45%;
+  padding: 50px 15px 50px 15px;
+  text-align: center;
+}
+
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 5px 5px 5px 5px;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 45%;
+  padding: 50px 15px 50px 15px;
+  text-align: center;
+}
+
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card1>img,
+.card2>img {
+  width: 80%;
+}
+
+.about_us>img {
+  justify-content: center;
+  background-color: none;
+}
+
+strong {
+  color: whitesmoke;
+}
+
+.header__image {
+  width: 90%;
+
+}
+
+.header__image>img {
+  height: 480px;
+  margin: 40px auto 15px 80px;
+  box-shadow: 20px -18px 0px -8px #4066E0;
+  border: 4px solid white;
+}
+
+.footergrad {
+  background: linear-gradient(to left, #207cfc, transparent 60%);
+  padding-bottom: 64px;
+  color: aliceblue;
+}
+a{
+  color: #0b264d;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .about_us {
+    display: none;
+  }
+  .form{
+    width: 80%;
+  }
+  .card {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card1,
+  .card2 {
+    width: 90%;
+  }
+
+  .card1>img,
+  .card2>img {
+    width: 90%;
+  }
+
+  .footergrad {
+    background: linear-gradient(to left, #207cfc, transparent 60%);
+    padding-bottom: 64px;
+  }
+
+  .social_link {
+    padding-left: 6%;
+  }
+
+  .phnum {
+    padding-left: 14%;
+  }
+
+  .resume__container {
+    margin-left: 3%;
+    margin-right: 2%;
+    gap: none;
+    display: list-item;
+  }
+
+  .header__container,
+  .header__content {
+    width: 95%;
+  }
+
+  .resume>h5 {
+    width: 85%;
+  }
+
+  .header__container {
+    display: list-item;
+    gap: none;
+  }
+
+  .header__image>img {
+    margin: 40px auto 15px 16%;
+  }
+  strong{
+    color: black;
+  }
+}
